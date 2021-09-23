@@ -5,21 +5,62 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "test": "jest",
+    "test:watch": "yarn test --watch"
   },
   "dependencies": {
+    "@react-native-community/masked-view": "0.1.10",
+    "@react-navigation/drawer": "^6.1.4",
+    "@react-navigation/native": "^6.0.2",
     "expo": "~42.0.1",
+    "expo-linear-gradient": "~8.2.1",
     "expo-status-bar": "~1.0.4",
+    "native-base": "^2.13.12",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
-    "react-native-web": "~0.13.12"
+    "react-native-chart-kit": "^6.3.0",
+    "react-native-gesture-handler": "~1.10.2",
+    "react-native-material-textfield": "^0.16.1",
+    "react-native-progress-bar-animated": "^1.0.6",
+    "react-native-reanimated": "~2.2.0",
+    "react-native-safe-area-context": "3.2.0",
+    "react-native-screens": "~3.4.0",
+    "react-native-svg": "^12.1.0",
+    "react-native-web": "~0.13.12",
+    "styled-components": "^5.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.10.4",
+    "@types/jest": "^26.0.4",
     "@types/react": "~16.9.35",
     "@types/react-native": "~0.63.2",
+    "@types/styled-components": "^5.1.14",
+    "@typescript-eslint/eslint-plugin": "^3.6.0",
+    "@typescript-eslint/parser": "^3.6.0",
+    "eslint": "^7.4.0",
+    "eslint-config-universe": "^4.0.0",
+    "jest-expo": "^38.0.2",
+    "prettier": "^2.0.5",
+    "react-test-renderer": "^16.13.1",
     "typescript": "~4.0.0"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|@sentry/.*)"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.ts?(x)",
+      "**/?(*.)+(spec|test).ts?(x)"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "tsx"
+    ]
   },
   "private": true
 }
