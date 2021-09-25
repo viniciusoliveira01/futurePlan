@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import { AccountCardProps } from '@types/accountCard';
+import { AccountCardProps } from '@src/types/accountCard';
 import {
   AccountCardContainer,
   StyledLinearGradient,

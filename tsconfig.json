@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "noImplicitAny": false,
     "strict": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
@@ -9,7 +10,6 @@
       "@config/*": ["src/config/*"],
       "@src/*": ["src/*"],
       "@components/*": ["src/components/*"],
-      "@types/*": ["src/types/*"],
       "@utils/*": ["src/utils/*"],
       "@services/*": ["src/services/*"]
     },

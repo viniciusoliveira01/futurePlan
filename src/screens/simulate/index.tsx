@@ -4,7 +4,7 @@ import styled from 'styled-components';
 // import { TextField } from 'react-native-material-textfield';
 
 import colors from '@config/colors';
-import HeaderComponent from '@components/Header';
+import HeaderComponent from '@src/components/common/Header';
 import SimulateModal from './components/SimulateModal';
 
 const SimulateScreen = () => {

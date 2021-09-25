@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components/native';
 import { Icon } from 'native-base';
 import { LinearGradient } from 'expo-linear-gradient';
-import { CardTextProps } from '@types/accountCard';
+import { CardTextProps } from '@src/types/accountCard';
 import colors from '@config/colors';
 
 export const CardContainer = styled.View`
