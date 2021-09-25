@@ -3,23 +3,21 @@ import { StatusBar } from 'react-native';
 import styled from 'styled-components';
 
 import colors from '@config/colors';
-import AccountCard from '@components/AccountCard';
+import AccountCard from './components/AccountCard';
 import HeaderComponent from '@components/Header';
-import HistoryCard from '@components/HistoryCard';
+import HistoryCard from './components/HistoryCard';
 
 export default function HomeScreen({ navigation }) {
   return (
     <Container>
       <StatusBar barStyle="dark-content" backgroundColor={colors.darkPurple} />
 
-      <HeaderComponent title="Home" />
-
       <HomeContainer>
         <AccountCard
           cardName="Simule seus investimentos"
           cardType="e veja quanto você terá investido no futuro"
+          icon="ios-arrow-forward"
           theme={[colors.purple, colors.darkPurple]}
-          cardIcon={null}
           onSimulate={() => navigation.navigate('Simulate')}
         />
 

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 import colors from '@config/colors';
 import HeaderComponent from '@components/Header';
-import SimulateModal from '@components/SimulateModal';
+import SimulateModal from './components/SimulateModal';
 
 const SimulateScreen = () => {
   const [isModalVisible, setModalVisible] = useState(false);

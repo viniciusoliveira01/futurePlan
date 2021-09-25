@@ -5,19 +5,15 @@
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
-      "@screens/*": [
-        "src/screens/*"
-      ],
-      "@config/*": [
-        "src/config/*"
-      ],
-      "@src/*": [
-        "src/*"
-      ],
-      "@components/*": [
-        "src/components/*"
-      ]
-    }
+      "@screens/*": ["src/screens/*"],
+      "@config/*": ["src/config/*"],
+      "@src/*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@types/*": ["src/types/*"],
+      "@utils/*": ["src/utils/*"],
+      "@services/*": ["src/services/*"]
+    },
+    "types": ["jest", "styled-components-react-native"]
   },
   "extends": "expo/tsconfig.base"
 }
