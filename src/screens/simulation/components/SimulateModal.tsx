@@ -1,36 +1,44 @@
 import React from 'react';
-import {
-  StatusBar,
-  Dimensions,
-  View,
-  TouchableOpacity,
-  Modal,
-} from 'react-native';
-import styled from 'styled-components';
+import { Dimensions, View, TouchableOpacity } from 'react-native';
 import { LineChart } from 'react-native-chart-kit';
 import { Icon } from 'native-base';
-// import Modal from 'react-native-modal';
+import Modal from 'react-native-modal';
 
-import colors from '@config/colors';
+import {
+  ModalContainer,
+  HeaderModal,
+  InvestimentTitle,
+  InvestimentRow,
+  InvestimentText,
+  ChartContainer,
+} from './SimulateModal.style';
 
 const SimulateModal = ({
   isModalVisible,
-  onModalShow,
+  onModalClose,
   investedValueWithoutIncome,
   dividends,
   investedValueWithIncomeAndMontly,
   months,
 }) => {
-  console.log(investedValueWithIncomeAndMontly);
   return (
-    <Modal isVisible={isModalVisible}>
+    <Modal
+      isVisible={isModalVisible}
+      animationInTiming={500}
+      animationOutTiming={500}
+      onBackdropPress={onModalClose}
+      style={{
+        justifyContent: 'flex-end',
+        margin: 0,
+      }}
+    >
       <ModalContainer>
         <HeaderModal>
           <InvestimentTitle>
             Gráfico do dinheiro em relação ao tempo
           </InvestimentTitle>
           <TouchableOpacity
-            onPress={() => onModalShow()}
+            onPress={() => onModalClose()}
             hitSlop={{ top: 20, bottom: 20, left: 50, right: 50 }}
           >
             <Icon name="close" color="#000" />
@@ -99,43 +107,5 @@ const SimulateModal = ({
     </Modal>
   );
 };
-
-const ModalContainer = styled.View`
-  height: 510px;
-  background-color: #fff;
-  border-radius: 6;
-`;
-
-const HeaderModal = styled.View`
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-`;
-
-const InvestimentTitle = styled.Text`
-  color: ${colors.darkGrey};
-  font-size: 15px;
-  font-weight: 500;
-  text-align: left;
-`;
-
-const ChartContainer = styled.View`
-  align-items: center;
-`;
-
-const InvestimentText = styled.Text`
-  color: ${colors.lightGrey};
-  font-size: 13px;
-  font-weight: 300;
-  text-align: left;
-`;
-
-const InvestimentRow = styled.View`
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 10px;
-`;
 
 export default SimulateModal;

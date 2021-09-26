@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import HomeScreen from '@screens/home';
-import SimulateScreen from '@screens/simulate/';
+import SimulationScreen from '@screens/simulation/';
 
 export default function Route() {
   const Drawer = createDrawerNavigator();
@@ -12,7 +12,7 @@ export default function Route() {
     <NavigationContainer>
       <Drawer.Navigator initialRouteName="Home">
         <Drawer.Screen name="Home" component={HomeScreen} />
-        <Drawer.Screen name="Simulation" component={SimulateScreen} />
+        <Drawer.Screen name="Simulation" component={SimulationScreen} />
       </Drawer.Navigator>
     </NavigationContainer>
   );

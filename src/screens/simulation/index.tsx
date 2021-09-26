@@ -1,13 +1,20 @@
 import React, { useState } from 'react';
 import { StatusBar, Text } from 'react-native';
-import styled from 'styled-components';
-// import { TextField } from 'react-native-material-textfield';
-
 import colors from '@config/colors';
-import HeaderComponent from '@src/components/common/Header';
+// import { TextField } from 'react-native-material-textfield';
+import {
+  Container,
+  SimulationButton,
+  SimulationContainer,
+  SimulationTextButton,
+  Divider,
+  InvestimentTitle,
+  ChartContainer,
+} from './index.style';
+
 import SimulateModal from './components/SimulateModal';
 
-const SimulateScreen = () => {
+const SimulationScreen = ({ navigation }) => {
   const [isModalVisible, setModalVisible] = useState(false);
   const [initialValue, setInitialValue] = useState(0);
   const [monthlyIncome, setMonthlyIncome] = useState(2);
@@ -22,7 +29,11 @@ const SimulateScreen = () => {
   ] = useState(0);
 
   const onModalShow = () => {
-    setModalVisible(!isModalVisible);
+    setModalVisible(true);
+  };
+
+  const onModalClose = () => {
+    setModalVisible(false);
   };
 
   const calculateInvestedValueWithoutIncome = () =>
@@ -56,14 +67,13 @@ const SimulateScreen = () => {
 
     onModalShow();
   };
-
   return (
     <Container>
       <StatusBar barStyle="dark-content" backgroundColor={colors.darkPurple} />
 
-      <HeaderComponent title="Simulate" />
+      {/* <HeaderComponent title="Simulate" /> */}
 
-      <SimulateContainer>
+      <SimulationContainer>
         {/* <TextField
           label="Valor inicial"
           value={initialValue}
@@ -114,65 +124,21 @@ const SimulateScreen = () => {
           keyboardType="number-pad"
         /> */}
 
-        <SimulateButton onPress={() => onSimulate()}>
-          <SimulateTextButton>Simular</SimulateTextButton>
-        </SimulateButton>
+        <SimulationButton onPress={() => onSimulate()}>
+          <SimulationTextButton>Simular</SimulationTextButton>
+        </SimulationButton>
 
         <SimulateModal
           isModalVisible={isModalVisible}
-          onModalShow={() => onModalShow()}
+          onModalClose={onModalClose}
           investedValueWithoutIncome={investedValueWithoutIncome}
           investedValueWithIncomeAndMontly={investedValueWithIncomeAndMontly}
           dividends={dividends}
           months={months}
         />
-      </SimulateContainer>
+      </SimulationContainer>
     </Container>
   );
 };
 
-const Container = styled.View`
-  flex: 1;
-`;
-const SimulateContainer = styled.View`
-  margin-top: 30px;
-  padding: 15px;
-  align-items: center;
-`;
-
-const Divider = styled.View`
-  height: 1;
-  background-color: #f3f3f3;
-  margin-top: 40;
-`;
-
-const SimulateButton = styled.TouchableOpacity`
-  height: 50px;
-  width: 150px;
-  border-radius: 5px;
-  background-color: ${colors.purple};
-  margin: 40px 0;
-  align-items: center;
-  justify-content: center;
-`;
-
-const SimulateTextButton = styled.Text`
-  color: ${colors.white};
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-`;
-
-const InvestimentTitle = styled.Text`
-  color: ${colors.lightGrey};
-  font-size: 15px;
-  font-weight: 300;
-  text-align: left;
-  padding: 0 0 0px 10px;
-`;
-
-const ChartContainer = styled.View`
-  align-items: center;
-`;
-
-export default SimulateScreen;
+export default SimulationScreen;

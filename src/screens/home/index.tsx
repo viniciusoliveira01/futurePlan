@@ -21,7 +21,7 @@ export default function HomeScreen({ navigation }) {
           cardType="e veja quanto você terá investido no futuro"
           icon="ios-arrow-forward"
           theme={[colors.purple, colors.darkPurple]}
-          onSimulate={() => navigation.navigate('Simulate')}
+          onSimulate={() => navigation.navigate('Simulation')}
         />
 
         <Divider />
