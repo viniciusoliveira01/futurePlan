@@ -1,9 +1,9 @@
 {
   "expo": {
-    "name": "investments",
-    "slug": "investments",
-    "version": "1.0.0",
-    "sdkVersion": "42.0.1",
+    "name": "futurePlan",
+    "slug": "futurePlan",
+    "version": "1.0.1",
+    "sdkVersion": "42.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
