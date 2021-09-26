@@ -35,6 +35,7 @@
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/plugin-proposal-export-namespace-from": "^7.10.4",
+    "@testing-library/react-native": "^7.2.0",
     "@types/jest": "^26.0.4",
     "@types/react": "~16.9.35",
     "@types/react-native": "~0.63.2",
@@ -51,17 +52,11 @@
   },
   "jest": {
     "preset": "jest-expo",
+    "setupFiles": [
+      "./src/config/jestSetupFile.ts"
+    ],
     "transformIgnorePatterns": [
-      "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|@sentry/.*)"
-    ],
-    "testMatch": [
-      "**/__tests__/**/*.ts?(x)",
-      "**/?(*.)+(spec|test).ts?(x)"
-    ],
-    "moduleFileExtensions": [
-      "js",
-      "ts",
-      "tsx"
+      "/node_modules/(?!(jest-)?@codler|@react-native|react-native|native-base-shoutem-theme|expo-linear-gradient|@unimodules)"
     ]
   },
   "private": true

@@ -1,7 +1,7 @@
 export type AccountCardProps = {
   theme: string[];
-  cardName: string;
-  cardType: string;
+  title: string;
+  text: string;
   icon?: string;
   onSimulate: () => void;
 };

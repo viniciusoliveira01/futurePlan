@@ -17,8 +17,8 @@ export default function HomeScreen({ navigation }) {
 
       <HomeContainer>
         <AccountCard
-          cardName="Simule seus investimentos"
-          cardType="e veja quanto você terá investido no futuro"
+          title="Simule seus investimentos"
+          text="e veja quanto você terá investido no futuro"
           icon="ios-arrow-forward"
           theme={[colors.purple, colors.darkPurple]}
           onSimulate={() => navigation.navigate('Simulation')}
@@ -28,22 +28,22 @@ export default function HomeScreen({ navigation }) {
 
         <HistoryContainer>
           <HistoryCard
-            title="Atingir 10k"
-            valueNow={10000}
-            goal={10000}
+            title="Atingir 100k"
+            valueNow={100000}
+            goal={100000}
             dateYear="2019"
           />
 
           <HistoryCard
-            title="Atingir 100k"
-            valueNow={50000}
-            goal={100000}
-            dateYear="2020"
+            title="Atingir 500k"
+            valueNow={480000}
+            goal={500000}
+            dateYear="2022"
           />
 
           <HistoryCard
             title="Atingir 1 milhão"
-            valueNow={50000}
+            valueNow={480000}
             goal={1000000}
             dateYear="2027"
           />

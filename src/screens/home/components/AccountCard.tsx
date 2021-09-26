@@ -11,8 +11,8 @@ import {
 
 const AccountCard = ({
   theme,
-  cardName,
-  cardType,
+  title,
+  text,
   icon,
   onSimulate,
 }: AccountCardProps) => {
@@ -25,8 +25,8 @@ const AccountCard = ({
       >
         <CardContainer>
           <View>
-            <CardText type="name">{cardName}</CardText>
-            <CardText>{cardType}</CardText>
+            <CardText type="name">{title}</CardText>
+            <CardText>{text}</CardText>
           </View>
         </CardContainer>
 
