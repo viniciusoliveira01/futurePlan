@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Account card Should render Account Card 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+>
+  <ViewManagerAdapter_ExpoLinearGradient
+    proxiedProperties={
+      Object {
+        "colors": Array [
+          undefined,
+          4283308466,
+        ],
+        "endPoint": Array [
+          1,
+          1,
+        ],
+        "locations": undefined,
+        "startPoint": Array [
+          0,
+          0,
+        ],
+      }
+    }
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 5,
+          "color": "#FFF",
+          "flexDirection": "row",
+          "fontSize": 20,
+          "justifyContent": "space-between",
+          "marginHorizontal": 20,
+          "marginRight": 10,
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 10,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "paddingBottom": 10,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 10,
+          },
+        ]
+      }
+    >
+      <View>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFF",
+                "fontSize": 16,
+                "fontWeight": "500",
+              },
+            ]
+          }
+          type="name"
+        >
+          Simule seus investimentos
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFF",
+                "fontSize": 12,
+                "fontWeight": "200",
+              },
+            ]
+          }
+        >
+          e veja quanto você terá investido no futuro
+        </Text>
+      </View>
+    </View>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": undefined,
+            "fontSize": 12,
+          },
+          Array [
+            Object {
+              "color": "#000",
+              "fontSize": 30,
+            },
+            Object {
+              "color": "#000",
+              "fontSize": 30,
+            },
+            Object {
+              "color": "#FFF",
+              "fontSize": 20,
+              "marginRight": 10,
+            },
+          ],
+          Object {
+            "fontFamily": "Ionicons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      
+    </Text>
+  </ViewManagerAdapter_ExpoLinearGradient>
+</View>
+`;
