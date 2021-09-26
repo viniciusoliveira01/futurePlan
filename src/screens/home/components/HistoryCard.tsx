@@ -12,8 +12,13 @@ import {
 } from './HistoryCard.style';
 import { HistoryCardProps } from '@src/types/historyCard';
 
+export const calculateProgressPercent = (
+  valueNow: number,
+  goal: number,
+): number => (valueNow / goal) * 100;
+
 const HistoryCard = ({ title, valueNow, goal, dateYear }: HistoryCardProps) => {
-  const progressPercent = (valueNow / goal) * 100;
+  const progressPercent = calculateProgressPercent(valueNow, goal);
   const isProgressCompleted =
     progressPercent === 100 ? colors.green : colors.purple;
 

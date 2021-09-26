@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`History Card Should render History Card 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FFF",
+        "borderRadius": 5,
+        "elevation": 1,
+        "marginHorizontal": 20,
+        "marginTop": 40,
+        "shadowColor": "#000",
+        "shadowOffset": Object {
+          "height": 3,
+          "width": 0,
+        },
+        "shadowOpacity": 0.27,
+        "shadowRadius": 4.65,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <View
+      progressPercent={0.5}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#7025FF",
+            "borderRadius": 5,
+            "justifyContent": "center",
+            "marginTop": -10,
+            "width": 50,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#FFF",
+              "fontSize": 10,
+              "fontWeight": "700",
+              "marginBottom": 5,
+              "marginHorizontal": 10,
+              "marginLeft": 5,
+              "marginRight": 5,
+              "marginTop": 5,
+            },
+          ]
+        }
+      >
+        2050
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "paddingBottom": 20,
+          "paddingLeft": 20,
+          "paddingRight": 20,
+          "paddingTop": 20,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <Text
+        progressPercent={0.5}
+        style={
+          Array [
+            Object {
+              "color": "#8c8c8c",
+              "fontSize": 14,
+              "fontWeight": "700",
+              "marginBottom": 15,
+            },
+          ]
+        }
+      >
+        Atingir 20000000
+      </Text>
+      <Text
+        progressPercent={0.5}
+        style={
+          Array [
+            Object {
+              "color": "#8c8c8c",
+              "fontSize": 14,
+              "fontWeight": "700",
+              "marginBottom": 15,
+            },
+          ]
+        }
+      >
+        0.5
+        %
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#C8CCCE",
+          "borderRadius": 6,
+          "borderWidth": 1,
+          "height": 15,
+          "width": 300,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#7025FF",
+            "borderRadius": 6,
+            "height": 13,
+            "width": 0,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;

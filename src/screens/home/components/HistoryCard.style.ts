@@ -3,18 +3,15 @@ import colors from '@config/colors';
 import { ProgressPercentProps } from '@src/types/historyCard';
 
 export const HistoryCardContainer = styled.View`
-    backgroundColor: ${colors.white};
-    margin-horizontal: 20px;
-    margin-top: 40px;
-    border-radius: 5px;
-    shadow-color: ${colors.black};
-    shadow-offset: {
-    width: 0px,
-    height: 3px
-    };
-    shadow-opacity: 0.27;
-    shadow-radius: 4.65;
-    elevation: 1;
+  background-color: ${colors.white};
+  margin-horizontal: 20px;
+  margin-top: 40px;
+  border-radius: 5px;
+  shadow-color: ${colors.black};
+  elevation: 1;
+  shadow-radius: 4.65px;
+  shadow-opacity: 0.27;
+  shadow-offset: 0px 3px;
 `;
 
 export const DateContainer = styled.View`
